@@ -7,7 +7,7 @@ using Notejam.Api.Persistance;
 
 namespace Notejam.Api.Business
 {
-    internal class NotesManagement : INotesManagement
+    public class NotesManagement : INotesManagement
     {
 
         private readonly INotesRepository _document;
@@ -39,7 +39,7 @@ namespace Notejam.Api.Business
         {
             var lstNotes = new List<NoteModel>();
             var notesDocument = await _document.GetAllNotes(query).ConfigureAwait(false);
-
+            
             foreach (var document in notesDocument)
             {
                 var noteModel = new NoteModel
