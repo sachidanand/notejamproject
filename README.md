@@ -18,7 +18,9 @@ There are three part of the application like as
             - And then separate models for Database layer.
         - Database layer is quite genric and can be used any database in future. 
         - Code structure is designed with Interfaces so that more classes could cover with Unit Testing and Mocking with the help of Interfaces.
-        - DI is being implemented to resolve the dependancies.             
+        - DI is being implemented to resolve the dependancies.     
+             
+        ![Alt text](docs/restapidesign.jpg?raw=true "REST API Design")   
 - Third Layer is to manage the older data.
     - There is option to take the offline backup of the older data more than 3 years and keep it in cheapest storage for longer time.
     - If in future some customer want their older data then it can be easily provided to them from the offline storage.
