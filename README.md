@@ -19,7 +19,7 @@ There are three part of the application like as
         - Database layer is quite genric and can be used any database in future. 
         - Code structure is designed with Interfaces so that more classes could cover with Unit Testing and Mocking with the help of Interfaces.
         - DI is being implemented to resolve the dependancies.     
-             
+
         ![Alt text](docs/restapidesign.jpg?raw=true "REST API Design")   
 - Third Layer is to manage the older data.
     - There is option to take the offline backup of the older data more than 3 years and keep it in cheapest storage for longer time.
@@ -61,3 +61,26 @@ Considering that Application would be developed and deployed frequently and also
 
 ### Deployment Design
 ![Alt text](docs/deployment.jpg?raw=true "Deployment Design")
+
+## Database Schema
+CosmosDB has been used into this application. Below are some benifit of it.
+- It NoSQL DB and best for performance.
+- Easily driven by schema and very flexible for schema related changes in future.
+- Easy to migrate to any other NoSQL DB in future.
+- More details about CosmosDB is here https://docs.microsoft.com/en-us/azure/cosmos-db/use-cases 
+
+### Sample Schema
+```
+{
+    "id": "7cb28c75-dd57-42c8-b343-bb2cd546a127",
+    "noteText": "testing notes",
+    "noteName": "test",
+    "createdDate": "2021-06-15T20:44:32.8682268+02:00",
+    "lastModifiedDate": "2021-06-15T20:44:32.8682929+02:00",
+    "padType": "Personal",
+    "userId": "12",
+    "_type": "NotesContent"
+}
+```
+- The CosmosDB Collection is partitioned collection and `_type` is the partition name.
+- We can store multiple types of document in the single collection.
