@@ -33,7 +33,7 @@ There are three part of the application like as
         - Code structure is designed with Interfaces so that more classes could cover with Unit Testing and Mocking with the help of Interfaces.
         - DI is being implemented to resolve the dependancies.     
 
-        ![Alt text](docs/restapidesign.jpg?raw=true "REST API Design")   
+        ![Alt text](docs/restapi.jpg?raw=true "REST API Design")   
 - Third Layer is to manage the older data.
     - There is option to take the offline backup of the older data more than 3 years and keep it in cheapest storage for longer time.
     - If in future some customer want their older data then it can be easily provided to them from the offline storage.
@@ -100,7 +100,7 @@ CosmosDB has been used into this application. Below are some benifit of it.
 
 ## Project structure
 
-![Alt text](docs/codestructure.jpg?raw=true "Code Structure")
+![Alt text](docs/project.jpg?raw=true "Code Structure")
 
 ## User Interface
 User Interface is just one PHP page `index.php` which is having just one table where all notes are being rendered. The UI part is still pending but concept is there how to build it.. 
