@@ -105,7 +105,7 @@ CosmosDB has been used into this application. Below are some benifit of it.
 ## User Interface
 User Interface is just one PHP page `index.php` which is having just one table where all notes are being rendered. The UI part is still pending but concept is there how to build it.. 
 
-![Alt text](docs/ui.jpg?raw=true "UI")
+![Alt text](docs/uipart.jpg?raw=true "UI")
 
 ## Pending Work
 The design and conceptual part is done. However the end to end code is not done which is also not expected as part of this. Project structure is also well defined now and developer should just add more classes inside to it. 
