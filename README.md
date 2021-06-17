@@ -1,4 +1,17 @@
-# About Architecture
+# About Project
+This is Online Notepad and user can manage their notes in this application. It has feature to add notes and view notes.
+
+## Prerequisite to run the code
+- Visual Studio 2019
+- Azure Function CLI
+- .Netcore 3.1
+- CosmosDB Simulator
+- Postman
+- PHP
+
+
+
+## About Architecture
 Application has been design in a such way so that it can be scalled at any point of time in future. 
 There are three part of the application like as 
 - Frontend layer
@@ -29,7 +42,7 @@ There are three part of the application like as
 
 ![Alt text](docs/design.jpg?raw=true "Architecture Design")
 
-# Multi Stage Deployment
+## Multi Stage Deployment
 Considering that Application would be developed and deployed frequently and also new releases would be rolled out. So below deployment strategy is about how to handle such situation and how to roll out the application frequently to production in agility mode.
 
 ## Repository Structure and Branching Strategy 
@@ -84,3 +97,24 @@ CosmosDB has been used into this application. Below are some benifit of it.
 ```
 - The CosmosDB Collection is partitioned collection and `_type` is the partition name.
 - We can store multiple types of document in the single collection.
+
+## Project structure
+
+![Alt text](docs/codestructure.jpg?raw=true "Code Structure")
+
+## User Interface
+User Interface is just one PHP page `index.php` which is having just one table where all notes are being rendered. The UI part is still pending but concept is there how to build it.. 
+
+![Alt text](docs/ui.jpg?raw=true "UI")
+
+## Pending Work
+The design and conceptual part is done. However the end to end code is not done which is also not expected as part of this. Project structure is also well defined now and developer should just add more classes inside to it. 
+Database collection is there and just need to add more schema under to it. Below are some open points to be developed.
+- Implementation of Authentication and Authorization
+- Register App in AAD
+- Implementation of SSO
+- Write the Unit Tests for all classes
+- Complete UI work
+- Add Users schema in DB
+- Implementation of User Sign-Up part 
+- CI-CD Pipeline
