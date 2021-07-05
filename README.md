@@ -42,6 +42,10 @@ There are three part of the application like as
 
 ![Alt text](docs/design.jpg?raw=true "Architecture Design")
 
+## Class Diagram 
+![Alt text](docs/classdiagram.jpg?raw=true "Architecture Design")
+
+
 ## Multi Stage Deployment
 Considering that Application would be developed and deployed frequently and also new releases would be rolled out. So below deployment strategy is about how to handle such situation and how to roll out the application frequently to production in agility mode.
 
